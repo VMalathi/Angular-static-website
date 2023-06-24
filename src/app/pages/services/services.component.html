@@ -1,0 +1,16 @@
+<section class="gallery">
+    <div class="container">
+        <app-heading headingText1="Our" headingText2="Services" align="C" class="d-block mb-5"></app-heading>
+        <div class="row">
+            <div class="col-md-4 mb-4 d-flex" *ngFor="let fd of featureData;index as i">
+                <div class="card">
+                    <i class="bi {{fd.image}}"></i>
+                    <div class="card-body">
+                        <h3 class="text-center">{{fd.name}}</h3>
+                        <p>{{fd.detail}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

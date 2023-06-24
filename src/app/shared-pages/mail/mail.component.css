@@ -1,0 +1,18 @@
+a:hover{
+    color:var(--primary-color);
+    transition: all;
+    transition-duration: 0.3s;
+}
+i{
+    padding-right:10px;
+    color:var(--primary-color);
+}
+@media (max-width:768px){
+    a{
+        font-size: 0.9rem;
+        display: block;
+    }
+    i{
+        color:var(--primary-color);
+    }
+}

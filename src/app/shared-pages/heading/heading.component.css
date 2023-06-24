@@ -1,0 +1,26 @@
+.heading{
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+    position: relative;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+.heading span{
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    text-transform:uppercase;
+}
+p{
+    text-transform: uppercase;
+}
+.sub-heading{
+    text-transform: uppercase;
+}
+.heading::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--primary-color);
+}

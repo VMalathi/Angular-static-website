@@ -1,0 +1,65 @@
+<section class="whuy-us">
+    <div class="container">
+        <app-heading class="d-block mb-5"
+        headingText1="Why Choose Our" headingText2="Home stay?" 
+        subheading="Hill Nest ensures privacy for a family vacation. The amenities include" align="C">
+        </app-heading>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="whuUsList">
+                    <ul *ngFor="let wd of whyUsData;index as i">
+                        <li><i class="bi bi-caret-right-fill"></i>{{ wd.list }}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <img src="../../../assets/img/garden.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="whuy-us">
+    <div class="container">
+        <app-heading class="d-block mb-5"
+        headingText1="Explore" headingText2="Kotagiri" align="C">
+        </app-heading>
+        <div class="row">
+            <div class="col-md-7">
+                <img src="../../../assets/img/kotakiri.webp" class="img-fluid" alt="Explore Kotagiri">
+            </div>
+            <div class="col-md-5">
+                <div class="whuUsList">
+                    <ul *ngFor="let wd of exploreData;index as i">
+                        <li><i class="bi bi-caret-right-fill"></i>{{ wd.list }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="home-about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-sm-12 px-3 px-sm-5">
+                <app-heading 
+                    headingText1="Accommodation" headingText2="" subheading="">
+                </app-heading>
+                <p> The best accommodation facilities are available in Hill nest for you to relax and enjoy the fabulous secret of Blue mountains. The Hill nest is well furnished home stay with all amenities. It has 4 bedrooms with balcony and bathroom attached. The rooms have 24hours running hot water facilities. The beautiful garden view, the Mountain View are most loveable ones in this home stay. Lush green garden with play area eco friendly environment and pleasant climate are the attractions.</p>
+                <a routerLink='/contact'>
+                    <app-button class="d-block" buttonName="Contact us" buttonSize="M" buttonShade="W"></app-button>
+                </a>
+            </div>
+            <div class="col-md-5 col-lg-5 col-sm-12 p-3 p-sm-4">
+                <img src="../../../assets/img/room-3.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="video">
+    <div class="container">
+        <div class="d-flex justify-content-center align-items-center">
+            <!--<div><i class="bi bi-play-circle text-center"></i></div>-->
+            <h2 class="text-white">Lourde Peter<br> Hill Nest Resort</h2>
+        </div>
+    </div>
+</section>

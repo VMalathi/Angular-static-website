@@ -1,0 +1,14 @@
+.home-background-section{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.6)), url(../../../../assets/img/garden.jpg);
+    height: 300px;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.background-captions{
+    position: absolute;
+    top: 100px;
+}

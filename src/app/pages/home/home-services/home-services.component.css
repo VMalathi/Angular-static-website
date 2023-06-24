@@ -1,0 +1,13 @@
+.home-service{
+    background:#333;
+    padding:70px 0;
+}
+img{
+    display: flex;
+    margin:20px auto;
+}
+h4{
+    color:#fff;
+    text-align: center;
+    text-transform: uppercase;
+}

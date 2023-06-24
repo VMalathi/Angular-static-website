@@ -1,0 +1,21 @@
+a:hover{
+    color:var(--secondary-color);
+    transition: all;
+    transition-duration: 0.3s;
+}
+i{
+    padding-right:10px;
+    color:var(--primary-color);
+}
+@media (max-width:768px){
+    a{
+        font-size: 0.9rem;
+    }
+    i{
+        color:var(--secondary-color);
+    }
+    .phone{
+        display: block;
+        padding:20px 0;
+    }
+}

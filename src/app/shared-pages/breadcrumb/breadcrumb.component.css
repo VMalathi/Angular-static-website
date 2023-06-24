@@ -1,0 +1,12 @@
+.breadcrumb{
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../../../assets/img/kotagiri.webp);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+.breadcrumb p{
+    color:#fff;
+    font-size:1.5rem;
+    margin:auto;
+    padding-top:100px;
+}

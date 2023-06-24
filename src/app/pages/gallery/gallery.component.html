@@ -1,0 +1,10 @@
+<section class="gallery">
+    <div class="container">
+        <app-heading headingText1="Our" headingText2="Gallery" align="C" class="d-block mb-5"></app-heading>
+        <div class="row">
+            <div class="col-md-4 mb-4" *ngFor="let gd of galleryData;index as i">
+                <img src="{{gd.image}}" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>

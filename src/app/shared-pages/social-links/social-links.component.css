@@ -1,0 +1,13 @@
+.social-links i{
+    color:var(--primary-color);
+    padding:0px 10px;
+}
+.mobile-links i{
+    color:var(--secondary-color);
+}
+@media (max-width:768px){
+    .social-links{
+        padding: 20px 0;
+        justify-content: center;
+    }
+}

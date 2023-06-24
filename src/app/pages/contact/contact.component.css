@@ -1,0 +1,24 @@
+input, textarea{
+    height: 54px;
+    border: 1px solid #e9e9e9;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    background: #f8f8f8;
+    padding: 0px 25px;
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+    color: #8c8c8c;
+    width: 100%;
+    font-weight: normal;
+}
+textarea{
+    height:100px;
+    margin-bottom:50px;
+}
+i{
+    font-size:2rem;
+    color:var(--primary-color);
+    padding-right:15px;
+}

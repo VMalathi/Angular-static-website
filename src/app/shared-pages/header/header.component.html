@@ -1,0 +1,52 @@
+<nav class="mobile-nav h-100 {{isSidebarShowing?'d-flex d-md-none d-lg-none d-sm-none':'d-none'}}">
+    <div class="col-md-4 col-sm-8 col-12 bg-white">
+        <div class="d-flex justify-content-end">
+            <i class="bi bi-x" (click)="this.closeSidebar();"></i>
+        </div>
+        <div>
+            <app-phone></app-phone>
+            <ul class="nav-menu d-lg-flex d-md-flex gap-5 justify-content-center {{isMenuScrolled?'fixed-ul':''}}">
+                <li>
+                    <a (click)="this.closeSidebar();" [routerLink]="['']" [routerLinkActive]="['active-link']" [routerLinkActiveOptions]="{exact:true}">Home</a>
+                </li>
+                <li><a (click)="this.closeSidebar();" routerLink="hillNest" [routerLinkActive]="['active-link']">Hill Nest</a></li>
+                <li><a (click)="this.closeSidebar();" routerLink="services" [routerLinkActive]="['active-link']">Services</a></li>
+                <li><a (click)="this.closeSidebar();" routerLink="gallery" [routerLinkActive]="['active-link']">Gallery</a></li>
+                <li><a (click)="this.closeSidebar();" routerLink="contact" [routerLinkActive]="['active-link']">Contact</a></li>
+            </ul>
+            <app-social-links></app-social-links>
+        </div>
+    </div>
+    <div (click)="this.closeSidebar();" class="col-md-8 col-sm-4 d-md-block d-none bg-gray mobile-transparency">
+    </div>
+</nav>
+<header class="absolute">
+    <div class="top-bar">
+        <div class="container">
+            <ul class="d-flex justify-content-between align-items-center">
+                <li>Happy Home <span>Happy Stay</span></li>
+                <li><img src="../../../assets/img/shapes/shape.webp" class="img-fluid"></li>
+                <li><app-phone></app-phone></li>
+                <li><img src="../../../assets/img/shapes/shape-2.webp" class="img-fluid"></li>
+                <li><i class="bi bi-clock"></i>Open Hours: 24 x 7</li>
+                <li>
+                    <app-social-links></app-social-links>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="{{isMenuScrolled?'fixed-top':''}}">
+        <div class="container d-flex justify-content-between align-items-center nav-head">
+            <a href="">
+                <!--<h2>Hill Nest</h2>-->
+                <img src="../../../assets/img/logo.webp" class="img-fluid logo-img" alt="Lourde Peter Hill Nest" title="Lourde Peter Hill Nest">
+            </a>
+            <div class="d-lg-none d-md-none d-sm-flex d-flex">
+                <i (click)="this.openSidebar();" class="bi bi-list"></i>
+            </div>
+            <app-menu class="d-md-block d-none"></app-menu>
+        </div>
+    </div>
+    
+</header>
+<app-breadcrumb></app-breadcrumb>
